@@ -8,9 +8,21 @@ $("#newWord").click(function(e) {
   });
 
   getWord.done(function(result) {
-    debugger;
-    $(".getWord").empty();
-    $(".getWord").append(result.word)
+    $(".getWord").text(result.word);
+    $(".getSpeechType").text(result.speech_type);
+    $(".getDefinition").text(result.definition);
+    $(".getSentence").text(result.sentence);
   });
 
+});
+
+
+$('#wordBody').click(function(e) {
+  e.preventDefault();
+
+  if ($('#image-upload').is(':hidden')) {
+    $('#image-upload').slideDown('slow');
+  } else {
+    $('#image-upload').slideUp('slow');
+  }
 });
