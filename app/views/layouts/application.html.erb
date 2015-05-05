@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
+    <div class="nav-wrapper">
+      <%= image_tag "testive.png", class: "testive" %>
+      <a href="#" class="brand-logo">[test-<em>iv</em>-ocab-<em>u</em>-lary]</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= button_tag "Get new word", class: "waves-light btn-large", id: "newWord" %></li>
+      </ul>
+    </div>
+  </nav>
 
 <%= yield %>
 
+  <%= javascript_include_tag 'application' %>
 </body>
 </html>

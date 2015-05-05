@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'pry'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
+gem  'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'

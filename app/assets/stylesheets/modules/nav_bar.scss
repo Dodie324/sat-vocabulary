@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+nav {
+  background-color: #023E50;
+  height: 67px;
+
+  .testive {
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+  }
+
+  .brand-logo {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+
+  .right {
+    padding-right: 2em;
+
+    #newWord {
+      background: #F48B24;
+    }
+  }
+}
