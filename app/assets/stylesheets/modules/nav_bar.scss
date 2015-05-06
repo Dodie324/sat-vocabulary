@@ -18,10 +18,12 @@ nav {
   }
 
   .right {
-    padding-right: 2em;
-
-    #newWord {
-      background: #F48B24;
+    .addWord {
+      padding-right: 1.9em;
+      a {
+        padding-top: 0.2em;
+      }
     }
   }
+
 }

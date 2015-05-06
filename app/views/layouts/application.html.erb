@@ -10,9 +10,9 @@
   <nav>
     <div class="nav-wrapper">
       <%= image_tag "testive.png", class: "testive" %>
-      <a href="#" class="brand-logo">[test-<em>iv</em>-ocab-<em>u</em>-lary]</a>
+      <a href="#" class="brand-logo">[test-<em>ive</em>-ocab-<em>u</em>-lary]</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><%= button_tag "Get new word", class: "waves-light btn-large", id: "newWord" %></li>
+        <li class="addWord"><%= link_to "ADD NEW WORD", new_word_path %></li>
       </ul>
     </div>
   </nav>

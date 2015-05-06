@@ -1,11 +1,20 @@
-
 .container {
+  font-family: "Montserrat";
 
   .row {
-    padding-top: 2.5em;
+    padding-top: 5em;
 
-    .circle {
-      margin-top: 1.3em;
+    .plus {
+      margin-top: 0.5em;
+      .mdi-content-add {
+        color: black;
+      }
+    }
+
+    #newWord {
+      margin-top: 1.5em;
+      margin-right: 1em;
+      width: 20%;
     }
   }
 

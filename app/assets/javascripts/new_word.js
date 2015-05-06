@@ -19,7 +19,7 @@ $("#newWord").click(function(e) {
 });
 
 
-$(".circle").click(function(e) {
+$(".plus").click(function(e) {
   e.preventDefault();
 
   if ($("#wordBody").is(":hidden")) {
