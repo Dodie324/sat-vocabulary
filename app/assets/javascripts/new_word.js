@@ -1,6 +1,8 @@
 $("#newWord").click(function(e) {
   e.preventDefault();
 
+  $("#wordBody").hide();
+
   var getWord = $.ajax({
     url: "/words",
     method: "GET",
@@ -17,12 +19,12 @@ $("#newWord").click(function(e) {
 });
 
 
-$('#wordBody').click(function(e) {
+$(".circle").click(function(e) {
   e.preventDefault();
 
-  if ($('#image-upload').is(':hidden')) {
-    $('#image-upload').slideDown('slow');
+  if ($("#wordBody").is(":hidden")) {
+    $("#wordBody").show();
   } else {
-    $('#image-upload').slideUp('slow');
+    $("#wordBody").hide();
   }
 });
