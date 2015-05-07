@@ -15,7 +15,9 @@ class WordsController < ApplicationController
   end
 
   def create
-    @word = Word.new(word_params)
+    sanitize = Word.downcase(word_params)
+    @word = Word.new(sanitize)
+
     if @word.save
       flash[:notice] = "Word added successfully!"
       redirect_to root_path
