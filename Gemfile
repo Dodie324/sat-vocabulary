@@ -10,11 +10,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'pry'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
-gem  'responders', '~> 2.0'
+gem 'responders', '~> 2.0'
+gem 'capybara'
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'launchy'
 end
 
