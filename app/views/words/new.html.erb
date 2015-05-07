@@ -1,31 +1,37 @@
+<div class="container_form">
 <%= form_for [@word], url: words_path(@word) do |f| %>
-<div class="row">
-  <div class="col s12">
-    <div class="row">
-      <div class="input-field col s12">
-        <%= f.label :word %>
-        <%= f.text_field :word %>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.label :word %>
+          <%= f.text_field :word %>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <%= f.label :speech_type, "Part of speech (n, adj, v)" %>
-        <%= f.text_field :speech_type %>
+      <div class="errors"><%= @word.errors.full_messages[0] %></div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.label :speech_type, "Part of speech (n, adj, v)" %>
+          <%= f.text_field :speech_type %>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <%= f.label :definition %>
-        <%= f.text_field :definition %>
+      <div class="errors"><%= @word.errors.full_messages[1] %></div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.label :definition %>
+          <%= f.text_field :definition %>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <%= f.label :sentence %>
-        <%= f.text_field :sentence %>
+      <div class="errors"><%= @word.errors.full_messages[2] %></div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.label :sentence %>
+          <%= f.text_field :sentence %>
+        </div>
       </div>
+      <div class="errors"><%= @word.errors.full_messages[3] %></div>
     </div>
   </div>
-</div>
-<%= f.submit "Submit", class: "waves-green btn-flat" %>
+  <%= f.button "Submit", class: "waves-effect waves-light btn btnform" %>
 <% end %>
+</div>

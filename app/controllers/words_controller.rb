@@ -17,8 +17,12 @@ class WordsController < ApplicationController
   def create
     @word = Word.new(word_params)
     if @word.save
+      flash[:notice] = "Word added successfully!"
       redirect_to root_path
+    else
+      render :new
     end
+
   end
 
   private

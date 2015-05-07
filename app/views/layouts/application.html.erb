@@ -9,14 +9,18 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <%= image_tag "testive.png", class: "testive" %>
-      <a href="#" class="brand-logo">[test-<em>ive</em>-ocab-<em>u</em>-lary]</a>
+      <%= link_to( image_tag "testive.png", href: "http://www.testive.com", class: "testive") %>
+      <a href="/" class="brand-logo">[test-<em>ive</em>-ocab-<em>u</em>-lary]</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li class="addWord"><%= link_to "ADD NEW WORD", new_word_path %></li>
       </ul>
     </div>
   </nav>
-
+  <%- flash.each do |key, value| -%>
+    <div class="flash flash-<%= key %>">
+      <%= value %>
+    </div>
+  <%- end -%>
 <%= yield %>
 
   <%= javascript_include_tag 'application' %>
