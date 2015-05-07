@@ -18,7 +18,6 @@ $("#newWord").click(function(e) {
 
 });
 
-
 $(".plus").click(function(e) {
   e.preventDefault();
 
