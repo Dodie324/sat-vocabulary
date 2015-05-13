@@ -14,10 +14,10 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li class="addWord"><%= link_to "ADD NEW WORD", new_word_path %></li>
         <%- if current_user -%>
-          <li><%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %></li>
+          <li class="addWord"><%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
-          <li><%= link_to 'SIGN UP', new_user_registration_path %></li>
-          <li><%= link_to 'LOG IN', new_user_session_path %></li>
+          <li class="addWord"><%= link_to 'SIGN UP', new_user_registration_path %></li>
+          <li class="addWord"><%= link_to 'LOG IN', new_user_session_path %></li>
         <%- end -%>
       </ul>
     </div>
